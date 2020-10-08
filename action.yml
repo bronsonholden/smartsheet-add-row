@@ -9,7 +9,7 @@ inputs:
     required: true
 outputs:
   row-id:
-    description: 'The created row's ID'
+    description: 'ID of the created row'
 runs:
   using: 'node12'
   main: 'dist/index.js'
