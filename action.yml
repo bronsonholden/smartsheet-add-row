@@ -1,0 +1,9 @@
+name: 'Add Smartsheet Row'
+description: 'Adds a new row to a Smartsheet'
+inputs:
+  row-data:
+    description: 'Row data to add to your sheet'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
