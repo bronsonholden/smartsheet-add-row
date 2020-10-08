@@ -1,5 +1,8 @@
 name: 'Add Smartsheet Row'
 description: 'Adds a new row to a Smartsheet'
+branding:
+  icon: 'file-plus'
+  color: 'blue'
 inputs:
   access-token:
     description: 'Smartsheet API access token'
