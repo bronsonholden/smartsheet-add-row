@@ -17,16 +17,14 @@ async function run() {
       accessToken
     });
 
-    console.log('Creating row');
-
-    const result = await smartsheet.sheets.addRows({
+    const response = await smartsheet.sheets.addRows({
       sheetId,
       body: {
         cells: []
       }
     });
 
-    console.log(result);
+    core.setOutput('row-id', response.result.id);
   } catch (error) {
     core.setFailed(error.message);
   }

@@ -7,6 +7,9 @@ inputs:
   sheet-id:
     description: 'Smartsheet sheet ID'
     required: true
+outputs:
+  row-id:
+    description: 'The created row's ID'
 runs:
   using: 'node12'
   main: 'dist/index.js'
