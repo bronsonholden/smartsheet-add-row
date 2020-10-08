@@ -10,8 +10,12 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout source code
+    - name: Create row
+      id: create-row
       uses: paulholden2/smartsheet-add-row@v1
       with:
         access-token: ${{ secrets.SMARTSHEET_API_KEY }}
         sheet-id: ${{ secrets.SMARTSHEET_SHEET_ID }}
+    - name: Spit out ID
+      run: |
+        echo ${{ steps.create-row.outputs.row-id }}
