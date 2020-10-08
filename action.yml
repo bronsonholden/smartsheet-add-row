@@ -1,8 +1,11 @@
 name: 'Add Smartsheet Row'
 description: 'Adds a new row to a Smartsheet'
 inputs:
-  row-data:
-    description: 'Row data to add to your sheet'
+  api-key:
+    description: 'Smartsheet API key'
+    required: true
+  sheet-id:
+    description: 'Smartsheet sheet ID'
     required: true
 runs:
   using: 'node12'

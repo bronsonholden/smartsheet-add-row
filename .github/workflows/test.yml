@@ -13,8 +13,5 @@ jobs:
     - name: Checkout source code
       uses: paulholden2/smartsheet-add-row@v1
       with:
-        row-data:
-        - column_id: 1234
-          value: '1234 value'
-        - column_id: 4321
-          value: '4321 value'
+        api-key: ${{ secrets.SMARTSHEET_API_KEY }}
+        sheet-id: ${{ secrets.SMARTSHEET_SHEET_ID }}
