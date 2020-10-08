@@ -1,8 +1,8 @@
 name: 'Add Smartsheet Row'
 description: 'Adds a new row to a Smartsheet'
 inputs:
-  api-key:
-    description: 'Smartsheet API key'
+  access-token:
+    description: 'Smartsheet API access token'
     required: true
   sheet-id:
     description: 'Smartsheet sheet ID'

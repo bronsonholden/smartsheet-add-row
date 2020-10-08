@@ -7,12 +7,15 @@ module.exports =
 
 const core = __webpack_require__(2186);
 const github = __webpack_require__(5438);
-const smartsheet = __webpack_require__(7498);
+const Smartsheet = __webpack_require__(7498);
 
 async function run() {
   try {
-    const apiKey = core.getInput('api-key');
+    const accessToken = core.getInput('access-token');
     const sheetId = core.getInput('sheet-id');
+    const smartsheet = Smartsheet.createClient({
+      accessToken
+    });
 
     await smartsheet.sheets.addRows({
       sheetId,

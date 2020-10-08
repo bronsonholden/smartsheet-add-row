@@ -13,5 +13,5 @@ jobs:
     - name: Checkout source code
       uses: paulholden2/smartsheet-add-row@v1
       with:
-        api-key: ${{ secrets.SMARTSHEET_API_KEY }}
+        access-token: ${{ secrets.SMARTSHEET_API_KEY }}
         sheet-id: ${{ secrets.SMARTSHEET_SHEET_ID }}

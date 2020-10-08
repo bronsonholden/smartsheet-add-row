@@ -1,11 +1,14 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const smartsheet = require('smartsheet');
+const Smartsheet = require('smartsheet');
 
 async function run() {
   try {
-    const apiKey = core.getInput('api-key');
+    const accessToken = core.getInput('access-token');
     const sheetId = core.getInput('sheet-id');
+    const smartsheet = Smartsheet.createClient({
+      accessToken
+    });
 
     await smartsheet.sheets.addRows({
       sheetId,
