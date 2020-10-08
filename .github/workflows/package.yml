@@ -6,6 +6,7 @@ on:
     paths:
       - 'index.js'
       - 'package.json'
+      - 'package-lock.json'
       - '.github/workflows/package.yml'
 
 jobs:
