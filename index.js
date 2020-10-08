@@ -10,9 +10,13 @@ async function run() {
       accessToken
     });
 
+    console.log('Creating row');
+
     const result = await smartsheet.sheets.addRows({
       sheetId,
-      body: {}
+      body: {
+        cells: []
+      }
     });
 
     console.log(result);
