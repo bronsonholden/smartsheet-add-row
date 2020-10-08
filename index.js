@@ -10,10 +10,12 @@ async function run() {
       accessToken
     });
 
-    await smartsheet.sheets.addRows({
+    const result = await smartsheet.sheets.addRows({
       sheetId,
       body: {}
     });
+
+    console.log(result);
   } catch (error) {
     core.setFailed(error.message);
   }
