@@ -1,6 +1,7 @@
 {
   "name": "smartsheet-add-row",
   "version": "1.0.0",
+  "repository": "https://github.com/paulholden2/smartsheet-add-row",
   "description": "A GitHub action to add a row to a Smartsheet",
   "main": "index.js",
   "scripts": {
@@ -8,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Paul Holden",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
