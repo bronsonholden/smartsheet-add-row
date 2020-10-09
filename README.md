@@ -1,5 +1,7 @@
 # Smartsheet GitHub Action: Add row
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/a12c770dc49bf1babff0/maintainability)](https://codeclimate.com/github/paulholden2/smartsheet-add-row/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/a12c770dc49bf1babff0/test_coverage)](https://codeclimate.com/github/paulholden2/smartsheet-add-row/test_coverage)
+
 A GitHub action that adds a single row to a Smartsheet. The row includes no
 data, so you will have to use this action in conjunction with the
 `update-smartsheet-row` action to populate the created row with data
